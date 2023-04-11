@@ -8,8 +8,8 @@
     --cor-azul: #0941FF;
 }
 
-html{
-    scroll-behavior: smooth ; 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +18,26 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     background-color: var(--cor-branca);
+}
+
+.contatos {
+    max-width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1em;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#iconContato {
+    transition: .2s ease-in-out;
+    color: #151515;
+}
+
+#iconContato:hover {
+    color: var(--cor-azul);
+    cursor: pointer;
 }
 
 
@@ -31,13 +51,13 @@ body {
 }
 
 
-#nome{
+#nome {
     font-size: 3em;
     margin-bottom: 0px;
     font-weight: 200;
 }
 
-#habilidades{
+#habilidades {
     font-size: 1em;
     margin-top: 0px;
 }
@@ -49,48 +69,51 @@ body {
     padding: 10px 50px;
     border-radius: 5px;
     border: none;
-    transition: .2s ease-in-out ;
+    transition: .2s ease-in-out;
 }
 
-#botaoConhecer:hover, #botaoConhecerProjeto:hover{
+#botaoConhecer:hover,
+#botaoConhecerProjeto:hover {
     cursor: pointer;
     background-image: linear-gradient(to right, var(--cor-preta), var(--cor-preta));
     border: none;
 }
 
-div.sobre{
+div.sobre {
     background-color: var(--cor-preta);
 }
 
-div.conteudoSobre{
+div.conteudoSobre {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     max-width: 1000px;
     text-align: start;
-    font-size: 20pt;    
+    font-size: 20pt;
     color: var(--cor-branca);
     padding: 5em .6em;
 }
 
-#sobreMim, #ferramentas{
+#sobreMim,
+#ferramentas {
     max-width: 700px;
     margin: 0 auto;
     text-align: start;
 }
 
-#skills, #ferramentas{
+#skills,
+#ferramentas {
     margin-left: 4em;
 }
 
-#tituloProjetos{
+#tituloProjetos {
     text-align: center;
     color: var(--cor-preta);
     font-size: 3em;
 }
 
 
-img{
+img {
     width: max(15%, 170px);
     margin: auto;
     margin-bottom: 1em;
@@ -115,24 +138,24 @@ div.projetos {
     gap: 10px;
 }
 
-#nomeProjeto{
-    color: var(--cor-branca); 
+#nomeProjeto {
+    color: var(--cor-branca);
     font-size: 25pt;
 }
 
-#descProjeto{
+#descProjeto {
     font-size: 20pt;
     color: var(--cor-branca);
     margin-top: -20px;
 }
 
-#conteudoProjeto{
+#conteudoProjeto {
     padding: 10px;
     width: 80%;
 }
 
 .bloco {
-    background-color:var(--cor-preta);
+    background-color: var(--cor-preta);
     color: var(--cor-branca);
     width: 300px;
     height: 400px;
@@ -147,14 +170,14 @@ div.projetos {
 }
 
 
-.projetosBlocos{
+.projetosBlocos {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
 }
 
-#botaoConhecerProjeto{
+#botaoConhecerProjeto {
     font-size: max(1em, 1pt);
     background-image: linear-gradient(to right, var(--cor-roxa), var(--cor-azul));
     color: var(--cor-branca);
@@ -165,23 +188,22 @@ div.projetos {
     display: block;
     margin-left: 35px;
     border: none;
-    transition: .2s ease-in-out ;    
+    transition: .2s ease-in-out;
 }
 
-#botaoConhecerProjeto:hover{
+#botaoConhecerProjeto:hover {
     background-image: linear-gradient(to right, var(--cor-branca), var(--cor-branca));
     color: #000000;
 }
 
-#capaProjeto{
+#capaProjeto {
     position: absolute;
     width: 100%;
     margin-left: -150px;
     margin-top: -80px;
 }
 
-#descricao{
+#descricao {
     position: absolute;
     top: 250px;
 }
-
