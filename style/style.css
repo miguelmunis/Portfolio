@@ -21,26 +21,22 @@ body {
 }
 
 .contatos {
-    max-width: 200px;
+    max-width: 900px;
     display: flex;
-    justify-content: space-evenly;
     margin: auto;
-    margin-top: 1em;
     gap: 1em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 #iconContato {
     transition: .2s ease-in-out;
-    color: #151515;
+    color: #d4d4d4;
 }
 
 #iconContato:hover {
     color: var(--cor-azul);
     cursor: pointer;
 }
-
-
 
 .bloco1 {
     margin: 1em auto;
@@ -79,7 +75,7 @@ body {
     border: none;
 }
 
-div.sobre {
+div#sobre {
     background-color: var(--cor-preta);
 }
 
@@ -88,7 +84,6 @@ div.conteudoSobre {
     flex-wrap: wrap;
     margin: auto;
     max-width: 1000px;
-    text-align: start;
     font-size: 20pt;
     color: var(--cor-branca);
     padding: 5em .6em;
@@ -110,7 +105,10 @@ div.conteudoSobre {
     text-align: center;
     color: var(--cor-preta);
     font-size: 3em;
+    font-weight: 300;
+
 }
+
 
 
 img {
@@ -141,6 +139,8 @@ div.projetos {
 #nomeProjeto {
     color: var(--cor-branca);
     font-size: 25pt;
+    font-weight: 300;
+    padding: 10px 10px 0px 10px;
 }
 
 #descProjeto {
@@ -200,10 +200,36 @@ div.projetos {
     position: absolute;
     width: 100%;
     margin-left: -150px;
-    margin-top: -80px;
+    margin-top: -50px;
+}
+
+#capaProjetoMindset{
+    position: absolute;
+    width: 100%;
+    margin-left: -150px;
+    margin-top: -90px;
 }
 
 #descricao {
     position: absolute;
     top: 250px;
+    padding: 2px;
+}
+
+
+ul{
+    list-style: none;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+
+li{
+    text-align: center;
+    display: inline-block;
+    padding: 0px 20px;
 }
